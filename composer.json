@@ -1,0 +1,27 @@
+{
+    "name": "dokterkepin/media",
+    "description": "this my new project, creating my own social media",
+    "type": "project",
+    "authors": [
+        {
+            "name": "dokterkepin",
+            "email": "btw.sneakythief33@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "dokterkepin\\media\\": "app"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dokterkepin\\media\\": "test"
+        }
+    }
+}
