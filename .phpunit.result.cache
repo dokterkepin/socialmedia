@@ -1,0 +1,1 @@
+{"version":1,"defects":{"dokterkepin\\media\\Config\\DatabaseTest::testGetConnection":8,"dokterkepin\\media\\Config\\DatabaseTest::testGetConnectionSingleton":8},"times":{"dokterkepin\\media\\Config\\DatabaseTest::testGetConnection":0.043,"dokterkepin\\media\\Config\\DatabaseTest::testGetConnectionSingleton":0.001}}
