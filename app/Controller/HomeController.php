@@ -9,7 +9,7 @@ class HomeController
 
     public function index(){
         View::render("Home/index", [
-            "title" => "Welcome, Please Login"
+            "title" => "Login"
         ]);
     }
 }
