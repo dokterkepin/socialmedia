@@ -1,4 +1,4 @@
-<form method="post" action="users/register" class="m-auto border px-5 pt-5" style="width: 23rem; color: #A6A5A8">
+<form method="post" action="/users/register" class="m-auto border px-5 pt-5" style="width: 23rem; color: #A6A5A8">
     <legend class="text-center mb-4 fw-bold" style="color: black">Register New Account</legend>
 
     <?php if(isset($model["error"])){ ?>
@@ -19,7 +19,7 @@
 
     <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input name="password" id="password" type="password" class="form-control">
+        <input name="password" id="password" type="password" class="form-control" >
     </div>
 
     <div class="mb-3">

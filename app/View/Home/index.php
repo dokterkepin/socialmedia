@@ -1,4 +1,4 @@
-<form method="post" action="users/login" class="m-auto border px-5 pt-5" style="width: 23rem; color: #A6A5A8">
+<form method="post" action="/users/login" class="m-auto border px-5 pt-5" style="width: 23rem; color: #A6A5A8">
     <legend class="text-center mb-4 fw-bold" style="color: black">Welcome, Please Login</legend>
 
     <?php if(isset($model["error"])){ ?>
