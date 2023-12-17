@@ -4,6 +4,8 @@ namespace dokterkepin\media\Controller;
 
 use dokterkepin\media\Config\Database;
 use dokterkepin\media\Exception\ValidationException;
+use dokterkepin\media\Model\UserLoginRequest;
+use dokterkepin\media\Model\UserLoginResponse;
 use dokterkepin\media\Model\UserRegisterRequest;
 use dokterkepin\media\Repository\UserRepository;
 use dokterkepin\media\Service\UserService;
@@ -39,6 +41,25 @@ class UserController
                     "error" => $exception->getMessage()]);
         }
 
+    }
+
+    public function login(){
+        View::render("User/login", ["title" => "Welcome Back, Please Login"]);
+    }
+
+    public function postLogin(){
+        $request = new UserLoginRequest();
+        $request->id = $_POST["id"];
+        $request->password = $_POST["password"];
+
+        try{
+            $response = $this->userService->login($request);
+            View::redirect("/");
+        }catch(ValidationException $exception){
+            View::render("User/login",
+                ["title" => "Welcome Back, Please Login",
+                    "error" => $exception->getMessage()]);
+        }
     }
 
 
